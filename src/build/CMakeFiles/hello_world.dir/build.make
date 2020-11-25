@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhang/workroom/demo/src
+CMAKE_SOURCE_DIR = /home/zhang/workroom/cmake_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhang/workroom/demo/src/build
+CMAKE_BINARY_DIR = /home/zhang/workroom/cmake_demo/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello_world.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/hello_world.dir/flags.make
 
 CMakeFiles/hello_world.dir/main.cpp.o: CMakeFiles/hello_world.dir/flags.make
 CMakeFiles/hello_world.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/workroom/demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_world.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/main.cpp.o -c /home/zhang/workroom/demo/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_world.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/main.cpp.o -c /home/zhang/workroom/cmake_demo/src/main.cpp
 
 CMakeFiles/hello_world.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_world.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/workroom/demo/src/main.cpp > CMakeFiles/hello_world.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/workroom/cmake_demo/src/main.cpp > CMakeFiles/hello_world.dir/main.cpp.i
 
 CMakeFiles/hello_world.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_world.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/workroom/demo/src/main.cpp -o CMakeFiles/hello_world.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/workroom/cmake_demo/src/main.cpp -o CMakeFiles/hello_world.dir/main.cpp.s
 
 CMakeFiles/hello_world.dir/main.cpp.o.requires:
 
@@ -81,17 +81,43 @@ CMakeFiles/hello_world.dir/main.cpp.o.provides: CMakeFiles/hello_world.dir/main.
 CMakeFiles/hello_world.dir/main.cpp.o.provides.build: CMakeFiles/hello_world.dir/main.cpp.o
 
 
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.o: CMakeFiles/hello_world.dir/flags.make
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.o: ../hello/hello_world.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_world.dir/hello/hello_world.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/hello/hello_world.cpp.o -c /home/zhang/workroom/cmake_demo/src/hello/hello_world.cpp
+
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_world.dir/hello/hello_world.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/workroom/cmake_demo/src/hello/hello_world.cpp > CMakeFiles/hello_world.dir/hello/hello_world.cpp.i
+
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_world.dir/hello/hello_world.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/workroom/cmake_demo/src/hello/hello_world.cpp -o CMakeFiles/hello_world.dir/hello/hello_world.cpp.s
+
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.requires:
+
+.PHONY : CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.requires
+
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.provides: CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.provides.build
+.PHONY : CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.provides
+
+CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.provides.build: CMakeFiles/hello_world.dir/hello/hello_world.cpp.o
+
+
 # Object files for target hello_world
 hello_world_OBJECTS = \
-"CMakeFiles/hello_world.dir/main.cpp.o"
+"CMakeFiles/hello_world.dir/main.cpp.o" \
+"CMakeFiles/hello_world.dir/hello/hello_world.cpp.o"
 
 # External object files for target hello_world
 hello_world_EXTERNAL_OBJECTS =
 
 hello_world: CMakeFiles/hello_world.dir/main.cpp.o
+hello_world: CMakeFiles/hello_world.dir/hello/hello_world.cpp.o
 hello_world: CMakeFiles/hello_world.dir/build.make
 hello_world: CMakeFiles/hello_world.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhang/workroom/demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello_world"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +126,7 @@ CMakeFiles/hello_world.dir/build: hello_world
 .PHONY : CMakeFiles/hello_world.dir/build
 
 CMakeFiles/hello_world.dir/requires: CMakeFiles/hello_world.dir/main.cpp.o.requires
+CMakeFiles/hello_world.dir/requires: CMakeFiles/hello_world.dir/hello/hello_world.cpp.o.requires
 
 .PHONY : CMakeFiles/hello_world.dir/requires
 
@@ -108,6 +135,6 @@ CMakeFiles/hello_world.dir/clean:
 .PHONY : CMakeFiles/hello_world.dir/clean
 
 CMakeFiles/hello_world.dir/depend:
-	cd /home/zhang/workroom/demo/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhang/workroom/demo/src /home/zhang/workroom/demo/src /home/zhang/workroom/demo/src/build /home/zhang/workroom/demo/src/build /home/zhang/workroom/demo/src/build/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhang/workroom/cmake_demo/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhang/workroom/cmake_demo/src /home/zhang/workroom/cmake_demo/src /home/zhang/workroom/cmake_demo/src/build /home/zhang/workroom/cmake_demo/src/build /home/zhang/workroom/cmake_demo/src/build/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello_world.dir/depend
 

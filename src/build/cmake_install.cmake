@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhang/workroom/demo/src
+# Install script for directory: /home/zhang/workroom/cmake_demo/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhang/workroom/demo/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhang/workroom/cmake_demo/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zhang/workroom/demo/src/third/model1 -I/home/zhang/workroom/demo/src/third/model2 
+CXX_INCLUDES = -I/home/zhang/workroom/cmake_demo/src/hello -I/home/zhang/workroom/cmake_demo/src/third/model1 -I/home/zhang/workroom/cmake_demo/src/third/model2 
 
