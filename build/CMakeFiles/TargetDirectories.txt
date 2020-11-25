@@ -1,0 +1,3 @@
+/home/zhang/workroom/demo/build/CMakeFiles/rebuild_cache.dir
+/home/zhang/workroom/demo/build/CMakeFiles/hello_binary.dir
+/home/zhang/workroom/demo/build/CMakeFiles/edit_cache.dir
