@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libhello_third_src_share_lib.so -o libhello_third_src_share_lib.so CMakeFiles/hello_third_src_share_lib.dir/hello_third_src_share_lib.cpp.o 

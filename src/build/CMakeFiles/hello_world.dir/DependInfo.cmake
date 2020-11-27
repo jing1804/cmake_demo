@@ -12,12 +12,15 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../hello"
-  "../third/model1"
-  "../third/model2"
+  "../third_src_lib1/model1"
+  "../third_src_lib1/model2"
+  "../../third_lib/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/DependInfo.cmake"
+  "/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

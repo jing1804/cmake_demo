@@ -1,3 +1,0 @@
-/home/zhang/workroom/demo/src/third/model2/build/CMakeFiles/rebuild_cache.dir
-/home/zhang/workroom/demo/src/third/model2/build/CMakeFiles/hello_share_library.dir
-/home/zhang/workroom/demo/src/third/model2/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10.2)
+project(demo)
+
+include_directories(sub)
+add_subdirectory(${PROJECT_SOURCE_DIR}/sub) 
+
+add_executable(demo main.cpp)
+#find_library(MODEL1_LIB hello_third_src_static_lib ${PROJECT_SOURCE_DIR}/sub)
+target_link_libraries(demo 
+						PUBLIC
+						hello_third_src_static_lib
+)

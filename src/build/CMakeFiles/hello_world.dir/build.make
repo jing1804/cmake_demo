@@ -116,6 +116,10 @@ hello_world_EXTERNAL_OBJECTS =
 hello_world: CMakeFiles/hello_world.dir/main.cpp.o
 hello_world: CMakeFiles/hello_world.dir/hello/hello_world.cpp.o
 hello_world: CMakeFiles/hello_world.dir/build.make
+hello_world: third_src_lib1/model1/libhello_third_src_static_lib.a
+hello_world: third_src_lib1/model2/libhello_third_src_share_lib.so
+hello_world: /home/zhang/workroom/cmake_demo/third_lib/lib/libhello_third_static_lib.a
+hello_world: /home/zhang/workroom/cmake_demo/third_lib/lib/libhello_third_share_lib.so
 hello_world: CMakeFiles/hello_world.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello_world"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=$(VERBOSE)

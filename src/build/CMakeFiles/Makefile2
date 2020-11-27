@@ -63,10 +63,11 @@ CMAKE_BINARY_DIR = /home/zhang/workroom/cmake_demo/src/build
 # Target rules for target CMakeFiles/hello_world.dir
 
 # All Build rule for target.
-CMakeFiles/hello_world.dir/all:
+CMakeFiles/hello_world.dir/all: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all
+CMakeFiles/hello_world.dir/all: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=1,2,3 "Built target hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=5,6,7 "Built target hello_world"
 .PHONY : CMakeFiles/hello_world.dir/all
 
 # Include target in all.
@@ -76,7 +77,7 @@ all: CMakeFiles/hello_world.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello_world.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello_world.dir/rule
@@ -93,6 +94,116 @@ CMakeFiles/hello_world.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/hello_world.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory third_src_lib1/model1
+
+# Convenience name for "all" pass in the directory.
+third_src_lib1/model1/all: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all
+
+.PHONY : third_src_lib1/model1/all
+
+# Convenience name for "clean" pass in the directory.
+third_src_lib1/model1/clean: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/clean
+
+.PHONY : third_src_lib1/model1/clean
+
+# Convenience name for "preinstall" pass in the directory.
+third_src_lib1/model1/preinstall:
+
+.PHONY : third_src_lib1/model1/preinstall
+
+#=============================================================================
+# Target rules for target third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir
+
+# All Build rule for target.
+third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all:
+	$(MAKE) -f third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build.make third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/depend
+	$(MAKE) -f third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build.make third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=3,4 "Built target hello_third_src_static_lib"
+.PHONY : third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all
+
+# Include target in all.
+all: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 0
+.PHONY : third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/rule
+
+# Convenience name for target.
+hello_third_src_static_lib: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/rule
+
+.PHONY : hello_third_src_static_lib
+
+# clean rule for target.
+third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/clean:
+	$(MAKE) -f third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build.make third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/clean
+.PHONY : third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/clean
+
+# clean rule for target.
+clean: third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory third_src_lib1/model2
+
+# Convenience name for "all" pass in the directory.
+third_src_lib1/model2/all: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all
+
+.PHONY : third_src_lib1/model2/all
+
+# Convenience name for "clean" pass in the directory.
+third_src_lib1/model2/clean: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/clean
+
+.PHONY : third_src_lib1/model2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+third_src_lib1/model2/preinstall:
+
+.PHONY : third_src_lib1/model2/preinstall
+
+#=============================================================================
+# Target rules for target third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir
+
+# All Build rule for target.
+third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all:
+	$(MAKE) -f third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build.make third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/depend
+	$(MAKE) -f third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build.make third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhang/workroom/cmake_demo/src/build/CMakeFiles --progress-num=1,2 "Built target hello_third_src_share_lib"
+.PHONY : third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all
+
+# Include target in all.
+all: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/workroom/cmake_demo/src/build/CMakeFiles 0
+.PHONY : third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/rule
+
+# Convenience name for target.
+hello_third_src_share_lib: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/rule
+
+.PHONY : hello_third_src_share_lib
+
+# clean rule for target.
+third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/clean:
+	$(MAKE) -f third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build.make third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/clean
+.PHONY : third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/clean
+
+# clean rule for target.
+clean: third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/clean
 
 .PHONY : clean
 

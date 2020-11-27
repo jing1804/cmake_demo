@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhello_third_src_static_lib.a  CMakeFiles/hello_third_src_static_lib.dir/hello_third_src_static_lib.cpp.o
+/usr/bin/ranlib libhello_third_src_static_lib.a

@@ -123,6 +123,32 @@ hello_world/fast:
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
 .PHONY : hello_world/fast
 
+#=============================================================================
+# Target rules for targets named hello_third_src_static_lib
+
+# Build rule for target.
+hello_third_src_static_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_third_src_static_lib
+.PHONY : hello_third_src_static_lib
+
+# fast build rule for target.
+hello_third_src_static_lib/fast:
+	$(MAKE) -f third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build.make third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir/build
+.PHONY : hello_third_src_static_lib/fast
+
+#=============================================================================
+# Target rules for targets named hello_third_src_share_lib
+
+# Build rule for target.
+hello_third_src_share_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_third_src_share_lib
+.PHONY : hello_third_src_share_lib
+
+# fast build rule for target.
+hello_third_src_share_lib/fast:
+	$(MAKE) -f third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build.make third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir/build
+.PHONY : hello_third_src_share_lib/fast
+
 hello/hello_world.o: hello/hello_world.cpp.o
 
 .PHONY : hello/hello_world.o
@@ -186,6 +212,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... hello_world"
 	@echo "... edit_cache"
+	@echo "... hello_third_src_static_lib"
+	@echo "... hello_third_src_share_lib"
 	@echo "... hello/hello_world.o"
 	@echo "... hello/hello_world.i"
 	@echo "... hello/hello_world.s"

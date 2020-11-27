@@ -1,3 +1,9 @@
 /home/zhang/workroom/cmake_demo/src/build/CMakeFiles/rebuild_cache.dir
 /home/zhang/workroom/cmake_demo/src/build/CMakeFiles/hello_world.dir
 /home/zhang/workroom/cmake_demo/src/build/CMakeFiles/edit_cache.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model1/CMakeFiles/rebuild_cache.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model1/CMakeFiles/hello_third_src_static_lib.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model1/CMakeFiles/edit_cache.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model2/CMakeFiles/rebuild_cache.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model2/CMakeFiles/hello_third_src_share_lib.dir
+/home/zhang/workroom/cmake_demo/src/build/third_src_lib1/model2/CMakeFiles/edit_cache.dir

@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.5)
+project(hello_world)
+#include_directories(${PROJECT_SOURCE_DIR}/third_src_lib/model1)
+add_subdirectory(${PROJECT_SOURCE_DIR}/third_src_lib/model1)
+add_executable(hello_world
+				main.cpp
+				${PROJECT_SOURCE_DIR}/hello/hello_world.cpp
+)
+target_include_directories(hello_world
+							PUBLIC
+							${PROJECT_SOURCE_DIR}/hello
+							${PROJECT_SOURCE_DIR}/third_src_lib/model1
+							${PROJECT_SOURCE_DIR}/third_src_lib/model2
+							${PROJECT_SOURCE_DIR}/../third_lib/include/
+)
+message("hi ${PROJECT_SOURCE_DIR}")
+find_library(MODEL1_LIB hello_third_src_static_lib HINTS ${PROJECT_SOURCE_DIR}/../build/third_src_lib/model1)
+find_library(HELLO_THIRD_STATIC_LIB hello_third_static_lib HINTS ${PROJECT_SOURCE_DIR}/../third_lib/lib)
+find_library(HELLO_THIRD_SHARE_LIB hello_third_share_lib HINTS ${PROJECT_SOURCE_DIR}/../third_lib/lib)
+target_link_libraries(hello_world
+						PUBLIC	
+						${MODEL1_LIB}	
+						${HELLO_THIRD_STATIC_LIB}
+						${HELLO_THIRD_SHARE_LIB}
+						
+)
